@@ -10,9 +10,7 @@ permissions:
 
 jobs:
   build:
-    name: Compile Paper plugin
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -29,12 +27,12 @@ jobs:
           gradle-version: '8.10.2'
 
       - name: Build plugin
+        working-directory: ./BlockRadioPaper
         run: gradle clean build --no-daemon
 
       - name: Upload plugin JAR
         uses: actions/upload-artifact@v4
         with:
-          name: BlockRadio-Paper-${{ github.sha }}
-          path: build/libs/*.jar
+          name: BlockRadio-Paper-1.21.11
+          path: BlockRadioPaper/build/libs/*.jar
           if-no-files-found: error
-          retention-days: 14
