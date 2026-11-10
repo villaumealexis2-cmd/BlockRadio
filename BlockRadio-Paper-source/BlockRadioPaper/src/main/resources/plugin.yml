@@ -1,0 +1,15 @@
+name: BlockRadioPaper
+version: '${version}'
+main: com.blockradio.paper.BlockRadioPlugin
+api-version: '1.21.11'
+description: Pilote le mod client BlockRadio (menu, boss bar) pour les joueurs équipés.
+commands:
+  musique:
+    description: Ouvre le menu de la radio BlockRadio
+    usage: /<command>
+    aliases: [music]
+    permission: blockradio.use
+permissions:
+  blockradio.use:
+    description: Autorise l'utilisation de /musique
+    default: true

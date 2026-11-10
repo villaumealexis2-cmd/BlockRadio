@@ -1,0 +1,26 @@
+# Les textes utilisent le format MiniMessage : https://docs.advntr.dev/minimessage/format.html
+messages:
+  mod-required: "<red>Le mod BlockRadio est requis pour utiliser cette commande."
+  player-only: "Cette commande est réservée aux joueurs."
+
+bossbar:
+  enabled: true
+  # Placeholder disponible : <title>
+  format: "<gold>♪ <white><title>"
+  unknown-title: "Radio"
+  # PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE
+  color: PURPLE
+  # PROGRESS, NOTCHED_6, NOTCHED_10, NOTCHED_12, NOTCHED_20
+  overlay: PROGRESS
+
+menu:
+  title: "<dark_gray>Radio BlockRadio"
+  play: "<green>Lecture"
+  stop: "<red>Arrêt"
+  volume-up: "<yellow>Volume +"
+  volume-down: "<yellow>Volume -"
+  info-name: "<gold>Radio"
+  info-playing: "<gray>État : <green>en lecture"
+  info-stopped: "<gray>État : <red>arrêtée"
+  info-title: "<gray>Titre : <white><title>"
+  info-volume: "<gray>Volume : <white><volume>%"
